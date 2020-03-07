@@ -1,0 +1,276 @@
+@font-face {font-family: "FrenchScriptMT";
+ src: url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.eot"); 
+ src: url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.eot?#iefix") format("embedded-opentype"), 
+ url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.woff2") format("woff2"), 
+ url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.woff") format("woff"), 
+ url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.ttf") format("truetype"), 
+ url("//db.onlinewebfonts.com/t/c2f7638be87032cd75a21eeceffd56bd.svg#French Script MT") format("svg"); }
+@font-face {font-family: "Algerian";
+ src: url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.eot"); 
+ src: url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.eot?#iefix") format("embedded-opentype"), 
+ url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.woff2") format("woff2"),
+ url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.woff") format("woff"), 
+ url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.ttf") format("truetype"), 
+ url("//db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.svg#Algerian") format("svg"); }
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+body{
+    background: url(../data/book6copy.jpg);
+    background-attachment: fixed;
+    background-size: 100% 140%;
+    background-position: 0% 28%;
+    height: 1500px;
+}
+/*
+header{
+    background: #110d0dc9;
+    border-radius: 30px;
+    color: #9b2727;
+    text-shadow: 0px 0px 6px red;
+    padding: 15px ;
+    font-size: 30px;
+    font-style:italic;
+    font-family:cursive;
+    width: 90%;
+    margin: auto;
+}
+*/
+header{
+   /* width: 70%;*/
+    /*background: #83828cbd;*/
+    color: #c2c2c2e0;
+    font-size: 80px;
+    font-style:italic;
+    text-shadow: 4px 0px 2px #08142c;
+    margin: auto;
+    height: 90px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+header div span {
+    font-size: 50px;
+}
+.frenchstyle{
+    font-size: 80px;
+    font-family: FrenchScriptMT;
+}
+.Algerianstyle{
+    font-size: 80px;
+    font-family: Algerian;
+}
+#bird{
+    height: 160px;
+    width: 200px;
+    position: absolute;
+    top: 31px;
+    right: 17px;     
+}
+#monkeyfun{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 25px;      
+}
+#NameSiat{
+    color: #131210e0;
+    position: absolute;
+    left: 22%;
+}
+.countenr{
+    height: 100%;
+    width: 60%;
+    margin: 0% 20% 0% 20%;
+    position: relative;
+}
+nav{
+   /* width: 70%; */
+    text-align: center;
+    /* background: #d7d7d1ab; */
+    height: 50px;
+    margin: auto;
+    border-bottom-right-radius:50%; 
+    border-bottom-left-radius:50%;
+}
+nav ul{list-style: none;}
+nav li{display: inline-block; padding: 10px; margin: auto;}
+nav ul li {
+    width: 12%;
+    height: 30px;
+    text-align: center;
+    font-size: 26px;
+    /*background-color: #ddddddb8;*/
+    color: #455655;
+    border-bottom:0;
+    padding-bottom:0;
+    /*border-radius: 50%;
+    box-shadow: 4px 4px 10px #000,-4px -4px 10px #000; */
+    transition: padding-bottom .5s ease-in-out, border-bottom .5s ease-in-out;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #08142c;
+    text-shadow: 1px -1px 1px #7faaff;
+    display: block;
+}
+nav ul li:hover {
+    padding-bottom: 5px ;
+    border-bottom: 5px solid red;
+    color: #000;
+    /*box-shadow: 4px 4px 10px #000,-4px -4px 10px #000; */
+}
+h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    color: #c57007e0;
+    
+}
+#h1{
+    width: 500px;
+    height: 100px;
+    padding: 15px 0px 0 15px ; 
+    background: #ddddddb8;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000;
+}
+.sent{
+    padding: 15px 0px 0 15px ; 
+}
+.sent textarea {
+    width: 150px;
+    height: 20px;
+    padding:10px ; 
+    resize: none; 
+    border: 2px solid #ccc; 
+    background-color: #f8f8f8; 
+    transition: width 0.9s ease-in-out , height 1s ease-in-out;
+}
+.sent textarea:focus{
+    width: 100%;
+    height: 100px;
+}
+.contact input[type="text"]{
+    padding: 5px;
+    border: 5px;
+}
+.signupbox{
+    /*text-align: center;*/
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background: #000000c7;
+    color: white;
+    box-sizing:border-box;
+    padding: 5% 5%;
+    border-radius: 30px;
+}
+.signupbox div{
+    display: inline;
+}
+.signupbox input{
+    border-radius: 50px;
+    height: 30px;
+}
+.signupbox input[type="text"] [type="password"]{
+    height:40px;
+    color:#fff;
+    font-size:16px;
+
+}
+.signupbox input:hover{/*box-shadow: 4px 4px 10px #b70606e0,-4px -4px 10px red;*/ border: 1px solid #00f;}
+ input[type="submit"]{
+
+    width: 100px;
+    height:40px;
+    background:#0037ff;
+    color:#fff;
+    font-size:18px;
+    border-radius:20px;
+}
+.mybook{
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin: 20px;
+}
+
+.mybook a img{
+    width: 100px;
+    height: 150px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000;
+}
+.mybook :hover{
+    box-shadow: 0px 0px 7px #ddddddb8, 0px 0px 7px #ddddddb8;
+
+} 
+
+.forms input[type="submit"]{
+    width: 150px;
+    margin: 12% auto;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000; 
+    background-color: #0800c27a;
+}
+
+.forms input[type="text"]{
+    height: 30PX;
+    margin: 10px 0 15px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.forms input[type="file"]{
+    padding: 15px 0px 0px 28px;
+}
+.box{
+    padding-left: 10px; 
+    min-height: 300px; 
+    border-radius: 20px;
+    background: #171717;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000;
+}
+.box .insertData input[type="File"]{
+    display: none;
+}
+.box .insertData label div {
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    background-color: #b80;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000; 
+    border-radius: 10px;
+    text-align: center;
+}
+.deletData div span{
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+}
+/*.box div{
+    float: left;
+    width: 250px;
+    height: 250px; 
+    text-align: center;
+    padding: 28px 0px 0 0px ; 
+    border-radius: 20px;
+    background: #171717;
+    box-shadow: 0px 4px 10px #000,0px -4px 10px #000;
+
+    position: absolute;
+}
+/*.insertData{
+    display: none;
+}
+.deletData
+{
+    display: none;
+}
+
+.updataData
+{
+    display: none;
+}*/
